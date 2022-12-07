@@ -10,6 +10,6 @@ const maxCalories = Math.max(...caloriesByElves)
 // Part 2
 const totalTop3Elves = caloriesByElves.sort((a, b) => b - a).slice(0,3).reduce((acc, curr) => acc +parseInt(curr), 0)
 
-console.log("☘️☘️☘️☘️ ~ file: main.js:12 ~ top3Elves", totalTop3Elves)
-console.log("☘️☘️☘️☘️ ~ file: main.js:6 ~ maxCalories", maxCalories)
+console.log("Part One - Result ▶️ ", totalTop3Elves)
+console.log("Part Two - Result ▶️ ", maxCalories)
 

@@ -47,8 +47,10 @@ const games = readFileSync('./input.txt').toString('utf8').trim().split("\n")
 const resultsPartOne = games.map((game) => {
     return scoreComputer(game.split(" ")[0], game.split(" ")[1])
 }).reduce((acc, curr) => acc + curr, 0)
-console.log("☘️☘️☘️☘️ ~ file: main.js:53 ~ resultsPartOne ~ resultsPartOne", resultsPartOne)
+
 const resultsPartTwo = games.map((game) => {
     return gamePredictor(game.split(" ")[0], game.split(" ")[1])
 }).reduce((acc, curr) => acc + curr, 0)
-console.log("☘️☘️☘️☘️ ~ file: main.js:63 ~ resultsPartTwo ~ resultsPartTwo", resultsPartTwo)
+
+console.log("Part One - Result ▶️ ", resultsPartOne)
+console.log("Part Two - Result ▶️ ", maxCalories)
