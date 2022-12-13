@@ -61,4 +61,4 @@ const partOne = Object.values(dirs)
 let spaceNeeded = 30000000 - (70000000 - dirs["/"])
 const partTwo = dirs[Object.keys(dirs).filter((dir) => dirs[dir] >= spaceNeeded)[0]];
 
-console.log("Part One - Result ▶️ ", partTwo)
+console.log("Part Two - Result ▶️ ", partTwo)
